@@ -116,9 +116,7 @@ function App() {
           ))}
         </div>
        
-        <button>
-          Start Call
-        </button>
+
 
       </div>
     </div>
