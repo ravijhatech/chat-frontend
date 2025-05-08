@@ -109,7 +109,12 @@ function App() {
         <video ref={remoteVideo} autoPlay playsInline width="50%" />
       </div>
 
-    
+    <div>
+        <div>
+          {messages.map((msg, i) => (
+            <div key={i}><strong>{msg.sender}:</strong> {msg.message}</div>
+          ))}
+        </div>
        
 
 
