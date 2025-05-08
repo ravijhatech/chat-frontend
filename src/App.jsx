@@ -23,7 +23,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { io } from 'socket.io-client';
 import axios from 'axios';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://chat-backend-1-4mz1.onrender.com');
 const roomId = 'room123';
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
 
   useEffect(() => {
     socket.emit('join', roomId);
-    axios.get(`http://localhost:5000/messages/${roomId}`).then(res => {
+    axios.get(`https://chat-backend-1-4mz1.onrender.com/messages/${roomId}`).then(res => {
       setMessages(res.data);
     });
 
