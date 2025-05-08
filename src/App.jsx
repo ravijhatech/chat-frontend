@@ -109,12 +109,7 @@ function App() {
         <video ref={remoteVideo} autoPlay playsInline width="50%" />
       </div>
 
-      <div style={{ marginTop: 20 }}>
-        <div style={{ maxHeight: 150, overflowY: 'scroll', border: '1px solid gray' }}>
-          {messages.map((msg, i) => (
-            <div key={i}><strong>{msg.sender}:</strong> {msg.message}</div>
-          ))}
-        </div>
+    
        
 
 
