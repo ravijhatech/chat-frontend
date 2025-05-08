@@ -115,7 +115,7 @@ function App() {
             <div key={i}><strong>{msg.sender}:</strong> {msg.message}</div>
           ))}
         </div>
-        <input value={text} onChange={(e) => setText(e.target.value)} />
+       
         <button>
           Start Call
         </button>
